@@ -1,0 +1,11 @@
+##Export Customer Analytics and load customer models and churn_value##
+#30 14 * * * /data02/scripts/process/bin/file_export/clm_export.sh
+#10 15 * * * /data02/scripts/process/bin/file_registration/churn_base_reg.sh
+#15 15 * * * /data02/scripts/process/bin/loading_l1/load_customer_models_and_churn_value.sh
+#30 15 * * * /data02/scripts/process/bin/clm/cml_data_prepared.sh
+#00 16 * * * /data02/scripts/process/bin/clm/sp_customer_models_update.sh
+#30 15 * * * /data02/scripts/process/bin/clm/cron_clm_model.sh
+
+##SMS Alart Every 02 Hour##
+#*/30 * * * * /data02/scripts/process/bin/sms_alert/sms_alert_mount_storage.sh
+*/30 * * * * /data02/scripts/process/bin/sms_alert/tablespace_sms_alert.sh

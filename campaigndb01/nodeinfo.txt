@@ -1,0 +1,6 @@
+hostname:	dwh
+ip	:	192.168.61.243
+user	:	root,dwhadmin
+purpose	:	Campaign Database
+DB user	:	campaigndb01
+

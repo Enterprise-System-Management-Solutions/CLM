@@ -1,0 +1,4 @@
+/data01
+/data01/oracle
+/data01/backup
+/data01/clm_export_dump
